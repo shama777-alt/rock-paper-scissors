@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Booleans</title>
+  </head>
+
+  <body>
+    <script>
+      /*
+      true;
+      false;
+      // domt surround booleans with quotes, as they are not strings.
+      console.log(3 > 5);
+
+      console.log(5 === "5.00");
+
+      if (false) {
+        console.log("This will always run because the condition is true.");
+      } else {
+        console.log("This will never run because the condition is false.");
+      }
+
+      const age = 15;
+
+      if (age >= 16) {
+        console.log("YOU can drive.");
+      } else if (age >= 14) {
+        console.log("Almost threre");
+      } else {
+        console.log("You cannot drive.s");
+      }
+
+      //using else if allows you to check multiple conditions in a sequential manner. If the first condition is false, it will move on to the next condition and check it. This way, you can have multiple branches of logic based on different conditions. In the example above, if the age is 15, it will check if it's greater than or equal to 16 (which is false), then it will check if it's greater than or equal to 14 (which is true), and it will execute the corresponding block of code for that condition. If none of the conditions are true, it will execute the code in the else block.
+
+      //curly braces are optional for if statements with only one statement, but it is a good practice to use them to improve readability and avoid potential issues when adding more statements in the future. Using curly braces helps to clearly define the scope of the if statement and makes it easier to understand which statements are part of the conditional block. It also helps prevent bugs that can occur when adding new statements without properly enclosing them in curly braces.
+      */
+
+      /*console.log(true && false); // This will output false
+      //&& is the logical AND operator, which returns true if both operands are true, and false otherwise. In this case, since one of the operands is false, the result is false.
+      console.log(0.2 >= 0 && 0.2 < 1 / 3); // This will output true
+
+      console.log(true || false); // This will output true
+      console.log(!false); // This will output false */
+
+      /*if (0) {
+        console.log("Truthy");
+      }
+      const cartQuantity = 5;
+
+      if (cartQuantity) {
+        console.log("cart has products");
+      }
+      console.log(!0); // This will output true, because 0 is a falsy value, and the logical NOT operator (!) negates it to true.
+
+      console.log("text" / 5);
+
+      let variable1;
+      console.log(variable1); // This will output undefined, because variable1 has been declared but not assigned a value.*/
+
+      //shortcuts for booleans:
+
+      // list of falsy values: 0, "", null, undefined, NaN, false
+
+      const result = true ? "truthy" : "falsy"; // This will evaluate to 'truthy' because the condition is true.
+      console.log(result);
+      //ternary operator.
+
+      const message = true && "hello";
+      console.log(message); // this is the guard opertator.
+
+      const currency = undefined || "USD";
+      console.log(currency); // DEFAULT OPERATOR
+
+      //LESSON SUMMARY:
+      //1. Booleans are a data type that can only have two values: true or false.
+    </script>
+  </body>
+</html>

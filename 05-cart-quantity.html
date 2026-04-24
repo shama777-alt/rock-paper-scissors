@@ -1,0 +1,47 @@
+<!doctype html>
+<title>Cart Quantity</title>
+
+   
+  </head>
+
+  <body>
+    <button onclick="console.log(`Cart Quantity: ${cartQuantity}`);">
+      Show Quantity
+    </button>
+
+    <button onclick="cartQuantity = ++cartQuantity;
+    console.log(`Cart Quantity: ${cartQuantity}`);
+    ">Add to Cart</button>
+
+
+    <button onclick="cartQuantity += 2;
+    console.log(`Cart Quantity: ${cartQuantity}`);
+    ">+2</button>
+
+
+    <button onclick="cartQuantity += 3;
+    console.log(`Cart Quantity: ${cartQuantity}`);
+    ">+3</button>
+
+
+    <button onclick="cartQuantity = 0;
+    console.log(`Cart Quantity: ${cartQuantity}`);
+    ">Reset Cart</button>
+
+    //shortcut for cartQuantity = cartQuantity + 1 is cartQuantity += 1 or cartQuantity++. The ++ operator increments the value of cartQuantity by 1. So, when you click the "Add to Cart" button, it will increase the cart quantity by 1 and log the updated quantity to the console.
+    
+
+
+    <script>
+     let cartQuantity = 0;
+     
+     //common naming conventions for variables in js are camelCase (e.g., cartQuantity), snake_case (e.g., cart_quantity), and PascalCase (e.g., CartQuantity). The most commonly used convention in JavaScript is camelCase, where the first word is lowercase and subsequent words are capitalized. This convention helps improve readability and maintainability of code.
+
+     // const is useful for declaring variables that should not be reassigned after their initial assignment. It provides a way to create constants, which can help prevent accidental changes to values that are meant to remain constant throughout the program. When you declare a variable with const, you must assign it a value at the time of declaration, and you cannot reassign it later in the code. This can help improve code safety and readability by clearly indicating which values are intended to be constant.
+     // var is an older way to declare variables in JavaScript, and it has some differences compared to let and const. One of the main differences is that var has function scope, while let and const have block scope. This means that variables declared with var are accessible throughout the entire function they are declared in, while variables declared with let and const are only accessible within the block they are declared in (e.g., within a loop or an if statement). Additionally, var allows for variable hoisting, which means that you can use a variable before it is declared, while let and const do not allow this behavior. Due to these differences, it is generally recommended to use let and const for variable declarations in modern JavaScript development to avoid potential issues with variable scope and hoisting.
+
+      
+
+    </script>
+  </body>
+</html>

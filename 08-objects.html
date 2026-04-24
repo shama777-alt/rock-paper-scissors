@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Objects</title>
+  </head>
+
+  <body>
+    <script>
+      /*const product = {
+        name: "socks",
+        price: 1090,
+      };
+
+      console.log(product);
+      console.log(product.name);
+      console.log(product.price);
+
+      product.name = "cotton socks";
+      console.log(product.name);*/
+
+      /*const product2 = {
+        name: "shirt",
+        ["delivery-time"]: "5 days",
+        rating: {
+          stars: 4.5,
+          count: 87,
+        },
+        fun: function function1() {
+          console.log("Function inside object");
+        },
+      };
+      console.log(product2.name);
+      console.log(product2.rating.count);
+
+      console.log[product2["name"]];
+      console.log(product2["delivery-time"]);
+      product2.fun();
+      console.log(typeof console);
+      console.log(typeof console.log);
+
+      JSON; //JavaScript Object Notation
+
+      console.log(JSON.stringify(product2));
+
+      const jsonString = JSON.stringify(product2);
+
+      console.log(JSON.parse(jsonString));*/
+
+      console.log("hello".length);
+      console.log("hello".toUpperCase());
+
+      const objecct1 = {
+        message: "hello",
+      };
+      const object2 = objecct1;
+
+      objecct1.message = "hi";
+      console.log(object2.message);
+      console.log(object2);
+
+      const object3 = {
+        message: "hello",
+      };
+      console.log(object3 === objecct1);
+      console.log(object2 === objecct1);
+
+      const object4 = {
+        message: "hello",
+        price: 799,
+      };
+      //const message = object4.message;
+      const { message, price } = object4;
+      console.log(message);
+      console.log(price);
+
+      const object5 = {
+        //message: message,
+        message,
+        method: function function1() {
+          console.log("method");
+          object5.method();
+        },
+        method2() {
+          console.log("method2");
+        },
+      };
+      console.log(object5);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+  </head>
+
+  <body>
+    <p>Rock Paper Scissors</p>
+
+    <button
+      onclick="
+        const randomNumber = Math.random();
+        let computerMove = '';
+
+        if (randomNumber >= 0 && randomNumber < 1 / 3) {
+          computerMove = 'Rock';
+        } else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
+          computerMove = 'Paper';
+        } else if (randomNumber >= 2 / 3 && randomNumber < 1) {
+          computerMove = 'Scissors';
+        }
+        console.log(computerMove);
+
+        let result = '';
+        if (computerMove === 'Rock') {
+          result = 'tie';
+        } else if (computerMove === 'Paper') {
+          result = 'You lose';
+        } else if (computerMove === 'Scissors') {
+          result = 'You win';
+        }
+        alert(
+          `You picked rock,the computer picked ${computerMove}. ${result} `,
+        );
+      "
+    >
+      Rock
+    </button>
+
+    <button
+      onclick="
+        const randomNumber = Math.random();
+        let computerMove = '';
+
+        if (randomNumber >= 0 && randomNumber < 1 / 3) {
+          computerMove = 'Rock';
+        } else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
+          computerMove = 'Paper';
+        } else if (randomNumber >= 2 / 3 && randomNumber < 1) {
+          computerMove = 'Scissors';
+        }
+        console.log(computerMove);
+
+        let result = '';
+        if (computerMove === 'Rock') {
+          result = 'Win';
+        } else if (computerMove === 'Paper') {
+          result = 'Tie';
+        } else if (computerMove === 'Scissors') {
+          result = 'You lose';
+        }
+        alert(
+          `You picked paper,the computer picked ${computerMove}. ${result} `,
+        );
+      "
+    >
+      Paper
+    </button>
+
+    <button
+      onclick="
+        const randomNumber = Math.random();
+        let computerMove = '';
+
+        if (randomNumber >= 0 && randomNumber < 1 / 3) {
+          computerMove = 'Rock';
+        } else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
+          computerMove = 'Paper';
+        } else if (randomNumber >= 2 / 3 && randomNumber < 1) {
+          computerMove = 'Scissors';
+        }
+        console.log(computerMove);
+
+        let result = '';
+        if (computerMove === 'Rock') {
+          result = 'You lose';
+        } else if (computerMove === 'Paper') {
+          result = 'You win';
+        } else if (computerMove === 'Scissors') {
+          result = 'tie';
+        }
+        alert(
+          `You picked scissors,the computer picked ${computerMove}. ${result} `,
+        );
+      "
+    >
+      Scissors
+    </button>
+
+    <script>
+      //algorithm for rock paper scissors:
+      //1. Get the user's choice (rock, paper, or scissors).can be done through a prompt or by clicking a button.
+      //2. Generate a random choice for the computer (rock, paper, or scissors). This can be done using a random number generator to select one of the three options.
+      //3. Compare the user's choice and the computer's choice to determine the winner.
+      //scopes are important here, as the computerMove variable is declared inside the if statements, it will not be accessible outside of those blocks. To fix this, you can declare the computerMove variable outside of the if statements and then assign it a value based on the random number generated. This way, you can access the computerMove variable after the if statements to determine the winner of the game.
+      //var doesnt have block scope, so it can be accessed outside of the if statements, but it is generally recommended to use let or const for variable declarations to avoid potential issues with variable hoisting and to improve code readability.
+    </script>
+  </body>
+</html>
